@@ -1,5 +1,5 @@
 # Mad Guy Website using Flask Server Framework
-# Made by Paul Ged - 12 June 2023
+# Made by Paul Ged - 12 June 2023.
 import datetime
 from flask import Flask, render_template, redirect
 
