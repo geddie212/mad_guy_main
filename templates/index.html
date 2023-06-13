@@ -1,0 +1,302 @@
+{% extends "header_footer.html" %}
+{% block body %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <a href="https://www.youtube.com/embed/y2TuytHrGEE" class="glightbox btn-watch-video">
+        <video autoplay="" muted="" loop="" id="myVideo">
+            <source src="{{ url_for('static', filename='vid/video_intro.mp4') }}" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </a>
+    <div class="overlay">
+        <div class="row overlay">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                 data-aos="fade-up" data-aos-delay="200">
+                <h1>Advanced Automation and Data Analytics</h1>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a href="{{ url_for('static', filename='vid/video_intro.mp4') }}"
+                       class="glightbox btn-get-started scrollto">Watch Video <i
+                            class="bi bi-play-circle" style="width:20px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Hero -->
+<main id="main">
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Mad... Crazy... But the job gets done well</h2>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-6">
+                    <p>
+                        That's the motto of Mad Man Automation, the software, automation, and data analytics solutions
+                        provider.
+                        <br><br>
+                        We pride ourselves on being lateral thinkers who pride on using unique and creative software
+                        solutions
+                        for the challanges our customers face.
+                        <br><br>
+                        But don't let our demeanor fool you. When it comes to getting the job done, Mad Man
+                        Automation is serious business.
+                    </p>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <p>
+                        So if you're looking for a software and automation specialist that can get the job done well,
+                        then look
+                        no further. We'll bring our mad skills to the table and help tackle the challenges your company
+                        is facing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+        <div class="container-fluid" data-aos="fade-up">
+
+            <div class="row">
+
+                <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                    <div class="content">
+                        <h3>Does your company <strong>SUFFER</strong> from...</h3>
+                    </div>
+                    <div class="accordion-list">
+                        <ul>
+                            <li>
+                                <a data-bs-toggle="collapse" class="collapse"
+                                   data-bs-target="#accordion-list-1"><span>1</span>
+                                    Employess doing repetitive manual tasks prone to error? <i
+                                            class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                                    <p>
+                                        The same old boring tasks day in and day out can drive even the most patient
+                                        employee up the wall.
+                                        <br><br>
+                                        We can provide automated processes which would cut down email communications,
+                                        reduce errors, save time, and give employees a break from the monotony and free
+                                        them up for more interesting and
+                                        creative work.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>2</span>
+                                    Data overload? <i
+                                            class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                                    <p>
+                                        Let's face it, data is like a wild beast - difficult to tame and even harder to
+                                        manage and analyse.
+                                        <br><br>
+                                        We are able to create processes data visualisation solutions so that management
+                                        can make sense of the data and form executive decisions from it.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>3</span>
+                                    Inaccurate data? <i
+                                            class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                                    <p>
+                                        Bad data can lead to bad decisions, and nobody wants that. We can develop
+                                        software systems which would capture errors before they appear on any report
+                                        or presentation.
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed"><span>4</span>
+                                    Lack of collaboration? <i
+                                            class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
+                                    <p>
+                                        Silos are great for farms, but not so much for companies.
+                                        <br><br>
+                                        Not freely sharing data between departments creates lengthily email exchanges
+                                        and unnecessary meetings for data that these departments need to do their work.
+                                        <br><br>
+                                        We can provide software solutions so that certain data is shared among relevant
+                                        departments to cut down costs and timings.
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-6" class="collapsed"><span>5</span>
+                                    Scalability challenges? <i
+                                            class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-6" class="collapse" data-bs-parent=".accordion-list">
+                                    <p>
+                                        Growing pains aren't just for kids - companies (big or small) face them too.
+                                        <br><br>
+                                        Automation is a huge cost saver for many industries. Many company processes that
+                                        traditionally would have needed employees or agencies to be responsible for can
+                                        now be fully automated, saving overhead costs.
+                                        <br><br>
+                                        And because these processes can be done lightning fast, they can be scaled up
+                                        much faster and cheaper than ever before.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+                     style='background-image: url("static/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">
+                </div>
+            </div>
+        </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg-lt">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Services</h2>
+                <p>From automating your most tedious tasks to turning your data into a goldmine of insights, we've got
+                    you covered.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-laptop"></i></div>
+                        <h4><a href="">Custom software development</a></h4>
+                        <p>Developing bespoke software solutions tailored to meet specific business needs.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                     data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-robot"></i></div>
+                        <h4><a href="">Automation consulting</a></h4>
+                        <p>Helping clients identify areas of their business that can be automated and developing a
+                            roadmap for implementing automation technologies.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                     data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-cpu-fill"></i></div>
+                        <h4><a href="">Artificial Intelligence (AI) and Machine Learning (ML)</a></h4>
+                        <p>Developing intelligent systems that can learn and adapt based on data.</p>
+                        <br>
+                        <p>We can also create prediction models based on the parameters you see as important to these
+                            outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                     data-aos-delay="400">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-bar-chart-line"></i></div>
+                        <h4><a href="">Data analytics and visualization</a></h4>
+                        <p>Helping clients gain insights from their data by analyzing it and presenting it in a clear
+                            and concise manner.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                     data-aos-delay="400">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-bar-chart-steps"></i></div>
+                        <h4><a href="">Project management</a></h4>
+                        <p>Managing software development and automation projects from start to finish, ensuring they are
+                            delivered on time and within budget</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                     data-aos-delay="400">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-wrench-adjustable"></i></div>
+                        <h4><a href="">Support and maintenance</a></h4>
+                        <p>Providing ongoing support and maintenance for software and automation systems to ensure they
+                            remain reliable and up-to-date.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-start">
+                    <h3>Contact Us</h3>
+                    <p>
+                        <br>
+                        Whether you need help streamlining your operations, optimizing your digital infrastructure, or
+                        gaining insights from your data, we have the skills and expertise to get the job done right.
+                        <br><br>
+                        If you see any processes or any software challenges your company is facing, please contact us,
+                        and we'll tell you if we can solve it for you.
+                    </p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle scrollto" href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Please feel free to contact us at any time using the information provided below.</p>
+            </div>
+
+
+            <div class="info">
+                <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Location:</h4>
+                    <p><a href="#map">166 Geary St, 1670, San Francisco, CA 94108</a></p>
+                </div>
+                <div id="map">
+                    <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p><a href="mailto:paulged@icloud.com">paulged@icloud.com</a></p>
+                    </div>
+                </div>
+                <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4>Call:</h4>
+                    <p><a href="tel:+14152121444">+1 415 212 1444</a></p>
+                </div>
+
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.097702580236!2d-122.40868922556575!3d37.78775001141476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858088d97c331d%3A0x7f6fd6561a47dcdf!2s166%20Geary%20St%2C%20San%20Francisco%2C%20CA%2094108!5e0!3m2!1sen!2sus!4v1686597300241!5m2!1sen!2sus"
+                        frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
+
+            </div>
+    </section><!-- End Contact Section -->
+</main><!-- End #main -->
+{% endblock body %}

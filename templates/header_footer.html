@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Mad Guy</title>
+    <meta content="Transform your business with cutting-edge automation and data analytics solutions. Mad Guy Automation combines advanced technologies and expertise to help you streamline operations, improve productivity, and gain valuable insights from your data. Discover how our innovative tools and services can revolutionize your business today."
+          name="description">
+    <meta content="automation, data analytics, business transformation, productivity, efficiency, insights, machine learning, artificial intelligence, predictive analytics, data visualization, process optimization, data-driven decision-making, cloud computing, digital transformation."
+          name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{ url_for('static', filename='img/mad guy favicon.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='img/mad guy favicon ipad touch.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Quicksand:wght@500&display=swap"
+          rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link
+            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+            rel="stylesheet"
+    />
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+    <!-- =======================================================
+    * Created by: Paul Ged AKA MAD GUY - April 2023
+    ======================================================== -->
+
+</head>
+<body>
+<!--  Codes -->
+<div class="wrapper">
+    <div class="title-box">
+        <i class="bx bx-cookie"></i>
+        <h3>Cookies Consent</h3>
+    </div>
+    <div class="info">
+        <p>
+            This website use cookies to help you have a superior and more relevant
+            browsing experience on the website. <a href="#"> Read more...</a>
+        </p>
+    </div>
+    <div class="buttons">
+        <button class="button" id="acceptBtn">Accept</button>
+        <button class="button">Decline</button>
+    </div>
+</div>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="{{ url_for('index') }}" style="width:300px;" class="logo me-auto"><img
+                src="{{ url_for('static', filename='img/mad guy logo.svg') }}" alt="mad guy automation logo"
+                class="img-fluid"></a>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+{% block body %}
+{% endblock body %}
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Mad Guy</h3>
+                    <h3>Automation</h3>
+                    <p><a href="#map">
+                        166 Geary Street, 1670 <br>
+                        San Francisco, CA 94108<br>
+                        United States </a><br><br>
+                        <strong>Phone:</strong><a href="tel:+14152121444"> +1 415 212 1444</a><br>
+                        <strong>Email:</strong><a href="mailto:paulged@icloud.com"> paulged@icloud.com</a><br>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#hero">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services">Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services">Micro and Macro Automation</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services">Software Solutions</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services">Data Cleaning and Visualization</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services">Machine Learning and AI models</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Mad Guy Automation </span></strong>{{ year }}. All Rights Reserved
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/waypoints/noframework.waypoints.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
