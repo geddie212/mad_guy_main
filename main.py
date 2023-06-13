@@ -16,6 +16,11 @@ def index():
     # renders index.html file and adds year variable for jinja
     return render_template("index.html", year=year)
 
+# cookie page
+@app.route("/cookies")
+def cookies():
+    return render_template("cookies.html")
+
 
 # runs app from main.py
 if __name__ == "__main__":
