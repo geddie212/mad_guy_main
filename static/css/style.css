@@ -1753,7 +1753,6 @@ section {
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  text-transform: uppercase;
   font-weight: 600;
   color: #37517e;
 }
@@ -1869,6 +1868,11 @@ section {
     padding-top: 4px;
   }
 }
+
+.mad {
+  color: #c13636;
+}
+
 
 /*--------------------------------------------------------------
 # Cookie Box
