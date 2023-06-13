@@ -1,7 +1,7 @@
 # Mad Guy Website using Flask Server Framework
 # Made by Paul Ged - 12 June 2023
 import datetime
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 # creates app to run
 app = Flask(__name__)
@@ -15,6 +15,11 @@ year = now_time.year
 def index():
     # renders index.html file and adds year variable for jinja
     return render_template("index.html", year=year)
+
+@app.route("/#services")
+def services():
+    # renders index.html file and adds year variable for jinja
+    return redirect('/')
 
 # cookie page
 @app.route("/cookies")
