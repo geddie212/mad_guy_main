@@ -3,7 +3,7 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
     <a href="https://www.youtube.com/embed/y2TuytHrGEE" class="glightbox btn-watch-video">
-        <video autoplay="" muted="" loop="" id="myVideo">
+        <video autoplay="" muted="" loop="" id="myVideo" playsinline="">
             <source src="{{ url_for('static', filename='vid/video_intro.mp4') }}" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
@@ -14,7 +14,7 @@
                  data-aos="fade-up" data-aos-delay="200">
                 <h1>Advanced Automation and Data Analytics</h1>
                 <div class="d-flex justify-content-center justify-content-lg-start">
-                    <a href="{{ url_for('static', filename='vid/video_intro.mp4') }}"
+                    <a href="https://www.youtube.com/embed/y2TuytHrGEE"
                        class="glightbox btn-get-started scrollto">Watch Video <i
                             class="bi bi-play-circle" style="width:20px;"></i></a>
                 </div>
