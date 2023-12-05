@@ -1,7 +1,7 @@
 # Mad Guy Website using Flask Server Framework
 # Made by Paul Ged - 12 June 2023.
 import datetime
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, send_file
 
 # creates app to run
 app = Flask(__name__)
@@ -25,6 +25,11 @@ def services():
 @app.route("/cookies")
 def cookies():
     return render_template("cookies.html")
+
+@app.route("/download_resume")
+def download_resume():
+    path = "static\\download\\Paulius Gedrimas Resume.pdf"
+    return send_file(path)
 
 
 # runs app from main.py

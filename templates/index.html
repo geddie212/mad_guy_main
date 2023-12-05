@@ -12,11 +12,11 @@
         <div class="row overlay">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
                  data-aos="fade-up" data-aos-delay="200">
-                <h1>Hi<br>I'm <span class="mad">Paul,</span><br>A Software Automation Developer</h1>
+                <h1>Hi<br>I'm <span class="mad">Paul,</span><br>A Senior Software Developer</h1>
                 <div class="d-flex justify-content-center justify-content-lg-start">
-                    <a href="https://www.youtube.com/embed/y2TuytHrGEE"
-                       class="glightbox btn-get-started scrollto">Watch Video <i
-                            class="bi bi-play-circle" style="width:20px;"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@paullovespython"
+                       class="btn-get-started scrollto">My YouTube <i
+                            class="bi bi-youtube" style="width:25px;"></i></a>
                 </div>
             </div>
         </div>
@@ -33,50 +33,100 @@
             </div>
 
             <div class="row content">
+                <div class="row">
+                    <div class="col-sm">
+                        <img class="avatar" src="{{ url_for('static', filename='img/paul_ged_profile_pic.png') }}"
+                             alt="Profile Picture">
+                    </div>
+                    <div class="col-sm">
+                        <h3 class="text-left fs-4">A software engineer with over 11 years experience in finance and
+                            e-commerce industries</h3>
+                        <p class="text-left fs-6"><b>Computer Science, Hertfordshire University, UK</b><br><br>
+                            I'm a graduate of Computer Science of Hertfordshire Class of 2012. My passions are Software
+                            Development, Fintech, Artificial Intelligence, Automation and Natural Language as well as
+                            Image processing.
+                        <ol>
+                            <li class="lh-lg">University of Hertfordshire (Herts) Bachelor of Science in Computer
+                                Science<br></li>
+                            <li class="lh-lg">Founder of Exponential Investment Fund, A investment fund implementing a
+                                diversified futures trading/investment strategies<br></li>
+                            <li class="lh-lg">Senior Software Developer at PFU (RICOH Subsidiary). Leading a Technical
+                                Sales and Software Development Team, managing Sales Engineers, Solutions Architects and
+                                Software Engineers distributed across EMEA.<br></li>
+                            <li class="lh-lg">My Resume<br>
+                                <a href="{{ url_for('download_resume') }}"><img class="resume_pdf zoom"
+                                                                                src="{{ url_for('static', filename='img/download_resume.png') }}"
+                                                                                alt="Profile Picture"></a></li>
+                        </ol>
+                        </p>
+                    </div>
+                    <h3 class="text-center fs-4">Learn More</h3>
+                    <hr>
 
-                <h3 class="text-center lh-lg">A software engineer with over 10 years experience, now automating the
-                    e-commerce industry.</h3>
-                <p>
-                <ol>
-                    <li class="lh-lg"><span class="mad text-break">96% time reduction</span> by automating Amazon Seller
-                        shipment process using
-                        the AWS API<br></li>
-                    <li class="lh-lg">Saved the company over <span class="mad">$357k in annual costs</span> by
-                        automating product
-                        placements on google shopping. This included pricing automation<br></li>
-                    <li class="lh-lg">Increased the ecommerce revenue by <span
-                            class="mad">18% and saved 3 months of manual work</span> by automating new product
-                        deployment by creating new products listings on the CMS API using the data extracted from the
-                        Oracle SQL API<br></li>
-                    <li class="lh-lg">Saved UK customers <span class="mad">$820k on product sales</span> and over <span
-                            class="mad">$140k in warehouse annual storage fees</span>
-                        by integrating UK warehouse API with the company's fulfillment platform (Digital River)<br></li>
-                </ol>
-                </p>
-                <h3 class="text-center lh-lg">Recent Project<br>Google Feed Shopping Automator</h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center m-4 zoom">
+                            <div class="icon-box">
+                                <div class="icon"><img
+                                        style="width:80px; padding-bottom:20px"
+                                        src="{{ url_for('static', filename='img/wrench-flat.png') }}"
+                                        alt="Skills"></div>
+                                <h4>Skills</h4>
+                            </div>
+                        </div>
+                        <div class="col  text-center m-4 zoom">
+                            <div class="icon-box"><img
+                                    style="width:80px; padding-bottom:20px"
+                                    src="{{ url_for('static', filename='img/projects.png') }}"
+                                    alt="Projects"></div>
+                            <h4>Projects</h4>
+                        </div>
+                        <div class="col  text-center m-4 zoom">
+                            <div class="icon-box"><img
+                                    style="width:80px; padding-bottom:20px"
+                                    src="{{ url_for('static', filename='img/briefcase.png') }}"
+                                    alt="Skills"></div>
+                            <h4>Work Experience</h4>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col  text-center m-4 zoom">
+                            <div class="icon-box"><img
+                                    style="width:80px; padding-bottom:20px"
+                                    src="{{ url_for('static', filename='img/resume.png') }}"
+                                    alt="Resume"></div>
+                            <h4>Resume</h4>
+                        </div>
+                    </div>
+                </div>
+
                 <hr>
-                <img src="{{ url_for('static', filename='img/google-feed-automator.gif') }}"
-                     alt="Google Feed Automation" style="width: 100%;">
+                <h3 class="text-center lh-lg">Recent Project<br>Google Feed Shopping Automator</h3>
                 <ul>
                     <li class="lh-lg"><b><br><br>Brief</b> - Build a web based app which connects to an e-commerce
                         website API to
-                        download individual product data and upload the data to Google Merchant Centre to have the most
+                        download individual product data and upload the data to Google Merchant Centre to have the
+                        most
                         up-to-date Google shopping listings for this business
                     </li>
                     <li class="lh-lg"><b>Outcome </b> - <span class="mad">97.5% time reduction</span> (this was done
                         manually before).
                         Saved the company over <span class="mad">$357k annually</span> by not hiring an agency to
-                        constantly update this process
+                        constantly update this process<br><br>
                     </li>
                 </ul>
-                <h2 class="lh-lg text-center">Tools used</h2>
-                <hr>
+
+                <img src="{{ url_for('static', filename='img/google-feed-automator.gif') }}"
+                     alt="Google Feed Automation" style="width: 100%;">
+
+                <h2 class="lh-lg text-center"><br>Tools used</h2>
                 <div class="container">
                     <div class="row">
                         <div class="col text-center m-4">
                             <div class="icon-box">
-                                <div class="icon"><img src="{{ url_for('static', filename='img/CSS and HTML.svg') }}"
-                                                       alt="HTML 5 and CSS 3" style="width: 100px;"></div>
+                                <div class="icon"><img
+                                        src="{{ url_for('static', filename='img/CSS and HTML.svg') }}"
+                                        alt="HTML 5 and CSS 3" style="width: 100px;"></div>
                                 <h4>HTML 5 and CSS 3</h4>
                             </div>
                         </div>
@@ -102,14 +152,16 @@
                             <h4>JavaScript</h4>
                         </div>
                         <div class="col  text-center m-4">
-                            <div class="icon"><img src="{{ url_for('static', filename='img/Google-Content-API.png') }}"
-                                                   alt="Google Shopping API" style="width: 100px;"></div>
+                            <div class="icon"><img
+                                    src="{{ url_for('static', filename='img/Google-Content-API.png') }}"
+                                    alt="Google Shopping API" style="width: 100px;"></div>
                             <h4>Google Shopping API</h4>
                         </div>
                         <div class="w-100"></div>
                         <div class="col  text-center m-4">
-                            <div class="icon"><img src="{{ url_for('static', filename='img/digital_river.svg.png') }}"
-                                                   alt="Digital River API" style="height: 50px;"></div>
+                            <div class="icon"><img
+                                    src="{{ url_for('static', filename='img/digital_river.svg.png') }}"
+                                    alt="Digital River API" style="height: 50px;"></div>
                             <h4>Digital River API</h4>
                         </div>
                         <div class="col  text-center m-4">
@@ -118,8 +170,9 @@
                             <h4>SQL Alchemy 1.4</h4>
                         </div>
                         <div class="col  text-center m-4">
-                            <div class="icon"><img src="{{ url_for('static', filename='img/Bootstrap_logo.svg.png') }}"
-                                                   alt="Boostrap" style="width: 100px;"></div>
+                            <div class="icon"><img
+                                    src="{{ url_for('static', filename='img/Bootstrap_logo.svg.png') }}"
+                                    alt="Boostrap" style="width: 100px;"></div>
                             <h4>Bootstrap 5.1</h4>
                         </div>
                     </div>
@@ -166,25 +219,24 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Experience</h2>
+                <h2>Skills</h2>
             </div>
 
             <div class="row">
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
-                        <div class="icon"><i class="bi bi-git"></i></div>
-                        <h4>Version Control Systems</h4>
-                        <p>Mainly Git and Github</p>
+                        <div class="icon"><i><img class="img-icon" alt="python" src="{{ url_for('static', filename='icons/python-150.svg') }}"></i></div>
+                        <h4>Python</h4>
+                        <p>I have over 11 years extensive experience with Python for classwork, professional and personal projects</p>
                     </div>
                 </div>
 
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
                      data-aos-delay="200">
                     <div class="icon-box">
-                        <div class="icon"><i class="bi bi-filetype-html"></i></div>
-                        <h4>Web Development</h4>
-                        <p>HTTP, HTML and CSS for the front-end and Python and server framework (Flask, Django) for the
-                            back-end</p>
+                        <div class="icon"><i><img class="img-icon" alt="C++" src="{{ url_for('static', filename='icons/cpp.svg') }}"></i></div>
+                        <h4>C++ and C#</h4>
+                        <p>I have 5 years experience developing in C++ and C#, mainly for the development and implementation of financial investment strategies</p>
                     </div>
                 </div>
 
@@ -193,7 +245,7 @@
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-database"></i></div>
                         <h4>Databases</h4>
-                        <p>MySQL, PostgreSQL, SQLite and MongoDB</p>
+                        <p>Mainly using: MySQL, PostgreSQL, SQLite and MongoDB</p>
                     </div>
                 </div>
 
@@ -210,7 +262,7 @@
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-wifi"></i></div>
                         <h4>Web APIs and RESTful Services</h4>
-                        <p>Web APIs and RESTful Services</p>
+                        <p>Extensive knowledge and experience with Web APIs and RESTful Services</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
@@ -218,7 +270,7 @@
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-bar-chart-steps"></i></div>
                         <h4>Data Analysis and Manipulation Libraries</h4>
-                        <p>Pandas and NumPy</p>
+                        <p>Depending on the project, my go-to libraries are Pandas and NumPy, but I have built custom Data Analysis and formatting libraries.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
@@ -233,8 +285,8 @@
                      data-aos-delay="400">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-robot"></i></div>
-                        <h4>Machine Learning Libraries</h4>
-                        <p>TensorFlow</p>
+                        <h4>AI and Machine Learning</h4>
+                        <p>Using and Designing custom AI systems, such as probabilistic models and neural networks. Experienced in Machine learning applications such as prediction, llm transformers. Experienced in libraries such as TensorFlow and Keras</p>
                     </div>
                 </div>
             </div>
@@ -259,14 +311,14 @@
                     CrownPeak API to push product data.
                 </li>
                 <li><b>Outcome </b> - Saved over <span class="mad">3 months manual work</span> for Ecommerce Department.
-                    Streamlined the process so any future products listings can be created automatically
+                    Streamlined the process so any future products listings can be created automatically<br><br>
                 </li>
             </ul>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="embed-responsive embed-responsive-21by9" style="text-align:center">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x5Its8g8cmw"
                         allowfullscreen></iframe>
             </div>
-            <h2 style="text-align: center; color: white;">Tools used</h2>
+            <h2 style="text-align: center; color: white;"><br><br>Tools used</h2>
             <hr>
             <div class="container">
                 <div class="row">
@@ -323,7 +375,7 @@
                 <div class="address">
                     <i class="bi bi-geo-alt"></i>
                     <h4>Location:</h4>
-                    <p><a href="https://turbotask.co/#map">166 Geary St, 1670, San Francisco, CA 94108</a></p>
+                    <p><a href="https://turbotask.co/#map">1540 Howard Street, SF, 94103</a></p>
                 </div>
                 <div id="map">
                     <div class="email">
