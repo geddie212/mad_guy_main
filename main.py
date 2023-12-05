@@ -28,7 +28,7 @@ def cookies():
 
 @app.route("/download_resume")
 def download_resume():
-    path = "static\\download\\Paulius Gedrimas Resume.pdf"
+    path = "static/download/Paulius Gedrimas Resume.pdf"
     return send_file(path)
 
 
